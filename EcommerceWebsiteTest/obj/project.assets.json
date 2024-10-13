@@ -5637,19 +5637,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Md Sahil Kaif\\.nuget\\packages\\": {}
+    "C:\\Users\\Mindfire\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Md Sahil Kaif\\source\\repos\\EcommerceWebsiteTest\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj",
+      "projectUniqueName": "C:\\Users\\Mindfire\\OneDrive\\Desktop\\EcommerceWebsiteTest\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj",
       "projectName": "EcommerceWebsiteTest",
-      "projectPath": "C:\\Users\\Md Sahil Kaif\\source\\repos\\EcommerceWebsiteTest\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj",
-      "packagesPath": "C:\\Users\\Md Sahil Kaif\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Md Sahil Kaif\\source\\repos\\EcommerceWebsiteTest\\EcommerceWebsiteTest\\obj\\",
+      "projectPath": "C:\\Users\\Mindfire\\OneDrive\\Desktop\\EcommerceWebsiteTest\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj",
+      "packagesPath": "C:\\Users\\Mindfire\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mindfire\\OneDrive\\Desktop\\EcommerceWebsiteTest\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Md Sahil Kaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mindfire\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5730,7 +5730,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
