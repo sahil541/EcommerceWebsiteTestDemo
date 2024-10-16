@@ -9,7 +9,17 @@ namespace EcommerceWebsiteTest
 
         public UITests()
         {
-            _driver = new ChromeDriver();
+            var chromeOptions = new ChromeOptions();
+            var isHeadless = Environment.GetEnvironmentVariable("HEADLESS_CHROME") == "true";
+
+            if (isHeadless)
+            {
+                chromeOptions.AddArgument("--headless");
+                chromeOptions.AddArgument("--no-sandbox");
+                chromeOptions.AddArgument("--disable-dev-shm-usage");
+            }
+
+            _driver = new ChromeDriver(chromeOptions);
             _driver.Manage().Window.Maximize();
             _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mindfire\\OneDrive\\Desktop\\EcommerceWebsiteTest\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj": {}
+    "C:\\Users\\Mindfire\\OneDrive\\Desktop\\Learnings\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mindfire\\OneDrive\\Desktop\\EcommerceWebsiteTest\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj": {
+    "C:\\Users\\Mindfire\\OneDrive\\Desktop\\Learnings\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mindfire\\OneDrive\\Desktop\\EcommerceWebsiteTest\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj",
+        "projectUniqueName": "C:\\Users\\Mindfire\\OneDrive\\Desktop\\Learnings\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj",
         "projectName": "EcommerceWebsiteTest",
-        "projectPath": "C:\\Users\\Mindfire\\OneDrive\\Desktop\\EcommerceWebsiteTest\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj",
+        "projectPath": "C:\\Users\\Mindfire\\OneDrive\\Desktop\\Learnings\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\EcommerceWebsiteTest.csproj",
         "packagesPath": "C:\\Users\\Mindfire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mindfire\\OneDrive\\Desktop\\EcommerceWebsiteTest\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\obj\\",
+        "outputPath": "C:\\Users\\Mindfire\\OneDrive\\Desktop\\Learnings\\EcommerceWebsiteTestDemo\\EcommerceWebsiteTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mindfire\\AppData\\Roaming\\NuGet\\NuGet.Config",
