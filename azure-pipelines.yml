@@ -7,12 +7,12 @@ trigger:
 - main
 
 schedules:
-- cron: "30 14 * * 5"  # Every Friday at 2:30 PM UTC (8:00 PM IST)
+- cron: "30 14 * * 5"  # This is every Friday at 2:30 PM UTC, which is 8:00 PM IST
   displayName: 'Weekly Friday 8 PM IST Pipeline Run'
   branches:
     include:
     - main
-  always: true
+  always: true  # Ensures the pipeline runs even if there are no code changes
 
 # Define parameters
 parameters:
@@ -26,32 +26,17 @@ parameters:
 
   - name: headlessMode
     displayName: 'Run tests in headless mode'
-    type: boolean
-    default: true
+    type: string
+    default: 'true'
 
 pool:
   name: 'DemoAgentPool'
 
 variables:
   buildConfiguration: ${{ parameters.buildConfiguration }}
-  # Set HEADLESS_CHROME to false by default
-  HEADLESS_CHROME: 'false'
+  HEADLESS_CHROME: ${{ parameters.headlessMode }}  # Use parameter value to control headless mode
 
 steps:
-# Use a script step to set HEADLESS_CHROME based on the parameter
-- script: |
-    echo "Setting headless mode to: ${{ parameters.headlessMode }}"
-    if [ "${{ parameters.headlessMode }}" = "true" ]; then
-      echo "Setting HEADLESS_CHROME to true"
-      echo "##vso[task.setvariable variable=HEADLESS_CHROME]true"
-    else
-      echo "Setting HEADLESS_CHROME to false"
-      echo "##vso[task.setvariable variable=HEADLESS_CHROME]false"
-    fi
-  displayName: 'Set HEADLESS_CHROME based on input parameter'
-
-# Run tests
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-
