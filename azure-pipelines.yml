@@ -11,6 +11,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  HEADLESS_CHROME: 'true'  # Set to true for headless execution in the pipeline
 
 steps:
 - task: DotNetCoreCLI@2
