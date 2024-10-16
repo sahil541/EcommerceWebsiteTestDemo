@@ -7,14 +7,13 @@ trigger:
 - main
 
 schedules:
-- cron: "30 14 * * 5"  # This is every Friday at 2:30 PM UTC, which is 8:00 PM IST
+- cron: "30 14 * * 5"
   displayName: 'Weekly Friday 8 PM IST Pipeline Run'
   branches:
     include:
     - main
-  always: true  # Ensures the pipeline runs even if there are no code changes
+  always: false
 
-# Define parameters
 parameters:
   - name: buildConfiguration
     displayName: 'Build Configuration'
@@ -34,7 +33,7 @@ pool:
 
 variables:
   buildConfiguration: ${{ parameters.buildConfiguration }}
-  HEADLESS_CHROME: ${{ parameters.headlessMode }}  # Use parameter value to control headless mode
+  HEADLESS_CHROME: ${{ parameters.headlessMode }}
 
 steps:
 - task: DotNetCoreCLI@2
